@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holt - электробритва HOLT</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/style-2.css" />
+  </head>
+  <body>
+    <div class="dialog-container">
+      <div class="dialog">
+        <div class="close-icon-box">
+          <button onclick="closeDialog()" class="close-icon-button">
+            <span class="material-symbols-outlined close-icon"> close </span>
+          </button>
+        </div>
+
+        <div class="dialog-logo">
+          <img src="./img/HOLT LOGO W 1.png" alt="" />
+        </div>
+        <div class="log-in">
+          <input
+            type="text"
+            name="name"
+            class="log-in-input"
+            placeholder="Имя пользователя"
+          />
+          <input
+            type="password"
+            name="password"
+            class="log-in-input"
+            placeholder="Введите пароль"
+          />
+        </div>
+        <div class="sign-in">
+          <button onclick="closeDialog()" class="sign-in-button">Войти</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="./img/HOLT LOGO W 1.png" alt="" /></a>
+        </div>
+        <div class="header-menu">
+          <a class="header-menu-links" href="third-page.html">Продукт</a>
+          <a class="header-menu-links" href="index.html"
+            >Эксклюзивные предложения</a
+          >
+          <a class="header-menu-links" href="#contacts">Поддержка</a>
+          <a class="header-menu-links" href="#contacts">О нас</a>
+        </div>
+        <div class="flex-grow"></div>
+        <div class="header-tools">
+          <button onclick="openDialog()" class="header-tools-button">
+            <span class="material-symbols-outlined header-icon"> person </span>
+            <span>Аккаунт</span>
+          </button>
+          <button class="header-tools-button">
+            <span class="material-symbols-outlined header-icon">
+              shopping_cart
+            </span>
+            <span>Корзина</span>
+          </button>
+        </div>
+      </div>
+      <div class="way-to-prod">
+        <span>HOME</span> > <span>Каталог товаров</span> >
+        <span>Уход за собой</span> >
+        <span>Машинки для стрижки, триммеры, бритвы</span> >
+        <span>Электробритва HT-ES-001</span>
+      </div>
+      <div class="product-cart">
+        <div class="prod-img">
+          <div class="annotation-container">
+            <img src="./img/2nd page annotation.png" alt="" />
+          </div>
+          <div class="carousel">
+            <button class="carousel-nav-button" disabled onclick="goToNext(-1)">
+              <span class="material-symbols-outlined"> arrow_back_ios </span>
+            </button>
+            <div class="image-wrapper">
+              <div class="image-container">
+                <div class="inner-image-container">
+                  <img
+                    class="carousel-image"
+                    src="./img/carousel-img1.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="carousel-image"
+                    src="./img/carousel-img2.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="carousel-image"
+                    src="./img/carousel-img3.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="carousel-image"
+                    src="./img/carousel-img4.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <button class="carousel-nav-button" onclick="goToNext(1)">
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </button>
+          </div>
+        </div>
+        <div class="prod-info">
+          <h1>Электробритва HOLT HT-ES-001</h1>
+          <div class="product-rating">
+            <span>артикул: ES00123</span>
+            <div class="rating-container">
+              <span class="material-symbols-outlined rating-icon"> star </span>
+              <span>4,5</span>
+            </div>
+            <a class="review" href="">(2323) отзывов</a>
+          </div>
+          <div class="prices">
+            <div class="recommended-price">
+              <span>рекомендованная цена</span>
+              <span>265,00* руб.</span>
+            </div>
+            <div class="sale-price">
+              <span>акционная цена</span>
+              <span>265,00* руб.</span>
+            </div>
+          </div>
+          <div class="add-to-cart">
+            <div class="added-num">
+              <button>-</button>
+              <input type="text" name="cart" value="1" />
+              <button>+</button>
+            </div>
+            <button class="to-cart">
+              <span class="material-symbols-outlined"> shopping_cart </span>
+              <span>Добавить в корзину</span>
+            </button>
+            <button class="buy-now">Купить в один клик</button>
+          </div>
+          <div class="stores">
+            <h2>Купить в магазинах:</h2>
+            <ul class="stores-list">
+              <li>
+                <b>
+                  <a
+                    class="fifth-element"
+                    target="_blank"
+                    href="https://5element.by/products/688237-elektrobritva-holt-ht-es-002"
+                    >5 элемент</a
+                  >
+                </b>
+                (Беларусь)
+              </li>
+              <li>
+                <b
+                  ><a
+                    class="ozon"
+                    target="_blank"
+                    href="https://ozon.by/product/elektricheskaya-britva-trimmer-elektrobritva-holt-ht-es-001-suhoe-brite-avtonomnaya-rabota-60-min-5-455769860/?sh=vPTiCu_6xA"
+                    >OZON</a
+                  ></b
+                >
+                (Россия)
+              </li>
+              <li>
+                <b
+                  ><a
+                    class="wb-store"
+                    target="_blank"
+                    href="https://www.wildberries.by/catalog/81493155/detail.aspx"
+                    >Wildberries</a
+                  ></b
+                >
+                (Беларусь)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="prod-characteristics">
+        <h1 class="characteristic-header">
+          Каждый день вы будете встречать уверенно с идеальным результатом
+        </h1>
+        <div class="description">
+          <p>
+            Аккумуляторная бритва Holt HT-ES-001 несомненно является хорошим
+            выбором для каждого мужчины. Наличие трех независимых плавающих
+            головок обеспечивает качественное бритье абсолютно разных контуров
+            лица. Так же данная модель оснащена ситемой безпасного бритья, что
+            исключает наличие всякого рода порезов. Функция экомии заряда
+            максимально долго продлевает использование бритвы без подзарядки(до
+            90 минут), а наличие триммера для бороды делает данное устройство
+            универсальным.
+          </p>
+          <p>
+            Аккумуляторная бритва с насадками Holt HT-ES-001 - это универсальный
+            прибор для ежедневного бритья, а также для создания идеальных
+            контуров усов и бороды, для подравнивания висков и для ухода за
+            носом и ушами.Насадка-бритва имеет три независимых плавающих
+            головки, которые позволяют максимально адаптироваться к контурам
+            лица, обеспечивая близкий контакт с кожей.Работа от сети гарантирует
+            постоянное и надежное питание, поэтому ваша бритва всегда готова к
+            работе.
+          </p>
+          <p>
+            Сетчатая бритва Holt HT-ES-001 оптимально повторяет контуры лица и
+            обеспечивает тщательное бритье. С помощью выдвижного фасонного
+            триммера можно сочетать ежедневное бритье и точную обработку бороды.
+            В этом высококачественном устройстве есть все необходимое для
+            комфортного бритья бороды.Улучшенный откидной триммер с лезвиями
+            ComfortTrim позволяет подстригать более длинные волосы перед тем,
+            как бриться, ухаживать за своими бакенбардами или создавать четкие
+            четкие линии.
+          </p>
+        </div>
+        <div class="option-description">
+          <div class="option">
+            <div class="option-text">
+              <img src="./img/option1.png" alt="" />
+              <p>
+                Наступило время чистого бритья. Обеспечивая вам надежную работу,
+                максимальный контакт и, самое главное, комфорт, вы можете
+                позаботиться о своем бритье с полной легкостью и уверенностью.
+              </p>
+            </div>
+            <div class="option-img">
+              <img src="./img/option-img1.png" alt="" />
+            </div>
+          </div>
+          <div class="option">
+            <div class="option-text">
+              <img src="./img/option2.png" alt="" />
+              <p>
+                Разработанная для точного повторения контуров лица,
+                электробритва имеет гибкие лезвия и поворотное основание
+                бреющего блока для полного комфорта во время бритья. Бритва
+                также имеет эргономичный дизайн для комфортного хвата в руке во
+                время бритья.
+              </p>
+            </div>
+            <div class="option-img">
+              <img src="./img/option-img2.png" alt="" />
+            </div>
+          </div>
+          <div class="option">
+            <div class="option-text">
+              <img src="./img/option3.png" alt="" />
+              <p>
+                Благодаря стайлеру 3-дневной щетины, который прикрепляется к
+                бреющей головке, вам даже не придется беспокоиться о том,
+                сколько волос вы подстригаете, потому что защитный стайлер
+                обеспечивает необходимую длину стрижки.
+              </p>
+            </div>
+            <div class="option-img">
+              <img src="./img/option-img3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="additional-option-box">
+          <div class="additional-option-box-item">
+            <img src="./img/option4.png" alt="" />
+            <p>
+              Улучшенный откидной триммер с лезвиями ComfortTrim позволяет
+              подстригать более длинные волосы перед тем, как бриться, ухаживать
+              за своими бакенбардами или создавать четкие четкие линии.
+            </p>
+          </div>
+          <div class="additional-option-box-item">
+            <img src="./img/option5.png" alt="" />
+            <p>
+              Триммер для бороды и бакенбард позволит вам подправлять их контуры
+              в домашних условиях. Ухаживать за прибором очень легко: улучшенная
+              система крепления позволяет легко снимать лезвия и вставлять их
+              обратно.
+            </p>
+          </div>
+          <div class="additional-option-box-item">
+            <img src="./img/option6.png" alt="" />
+            <p>
+              Благодаря трем плавающим головкам на трех плавающих платформах, он
+              максимально плотно прилегает к коже и обеспечивает идеальный
+              результат.Работа от сети гарантирует постоянное и надежное
+              питание.
+            </p>
+          </div>
+        </div>
+        <div class="contacts" id="contacts">
+          <div class="contact-menu">
+            <div class="contact-icons">
+              <span class="material-symbols-outlined contact-icon">
+                support_agent
+              </span>
+            </div>
+            <ul>
+              <li>Руководитель отдела продаж: Вадим Готовчиц</li>
+              <p>123456789@mail.ru</p>
+              <li>Ведущий специалист отдела продаж: Наталья Данилова</li>
+              <p>123456789@mail.ru</p>
+              <li>Заместитель руководителя отдела продаж: Павел Яроцкий</li>
+              <p>123456789@mail.ru</p>
+            </ul>
+          </div>
+          <div class="contact-menu">
+            <div class="contact-icons">
+              <span class="material-symbols-outlined contact-icon">
+                location_on
+              </span>
+            </div>
+            <p>Республика Беларусь, 220035, г. Минск</p>
+            <p>ул. Тимирязева, д. 65а, офис 307</p>
+            <p>Email: adimaxtrade@mail.ru</p>
+            <p>Оф.сайт: holt.by</p>
+          </div>
+        </div>
+        <div class="rights">
+          <span>© HOLT, 2015 </span>
+          <p>Все права защищены</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openDialog() {
+        const dialog = document.querySelector(".dialog-container");
+        dialog.classList.add("shown");
+        const offScroll = document.body;
+        offScroll.classList.add("off-scroll");
+      }
+      function closeDialog() {
+        const dialog = document.querySelector(".dialog-container");
+        dialog.classList.remove("shown");
+        const offScroll = document.body;
+        offScroll.classList.remove("off-scroll");
+      }
+      let currentImageIndex = 0;
+      const IMAGE_COUNT = 4;
+      const IMAGE_WIDTH = 550;
+
+      function changeIndicators() {
+        const prev = document.querySelector(".indicator.active");
+        prev.classList.remove("active");
+
+        const selector = `.indicator:nth-child(${currentImageIndex + 1})`;
+        const indicator = document.querySelector(selector);
+        indicator.classList.add("active");
+      }
+
+      function goToNext(step) {
+        currentImageIndex = currentImageIndex + step;
+        const offset = IMAGE_WIDTH * currentImageIndex;
+        const imageContainer = document.querySelector(".inner-image-container");
+        imageContainer.style.transform = `translateX(-${offset}px)`;
+        disableButtons();
+        changeIndicators();
+      }
+
+      function goToElement(elementIndex) {
+        currentImageIndex = elementIndex;
+        const offset = IMAGE_WIDTH * currentImageIndex;
+        const imageContainer = document.querySelector(".inner-image-container");
+        imageContainer.style.transform = `translateX(-${offset}px)`;
+        disableButtons();
+        changeIndicators();
+      }
+
+      function disableButtons() {
+        const [prev, next] = document.querySelectorAll(".carousel-nav-button");
+        if (currentImageIndex === 0) {
+          prev.setAttribute("disabled", "true");
+        } else {
+          prev.removeAttribute("disabled");
+        }
+        if (currentImageIndex + 1 === IMAGE_COUNT) {
+          next.setAttribute("disabled", "true");
+        } else {
+          next.removeAttribute("disabled");
+        }
+      }
+    </script>
+  </body>
+</html>

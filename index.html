@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holt - бытовая техника</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="dialog-container">
+      <div class="dialog">
+        <div class="close-icon-box">
+          <button onclick="closeDialog()" class="close-icon-button">
+            <span class="material-symbols-outlined close-icon"> close </span>
+          </button>
+        </div>
+
+        <div class="dialog-logo">
+          <img src="./img/HOLT LOGO W 1.png" alt="" />
+        </div>
+        <div class="log-in">
+          <input
+            type="text"
+            name="name"
+            class="log-in-input"
+            placeholder="Имя пользователя"
+          />
+          <input
+            type="password"
+            name="password"
+            class="log-in-input"
+            placeholder="Введите пароль"
+          />
+        </div>
+        <div class="sign-in">
+          <button onclick="closeDialog()" class="sign-in-button">Войти</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="./img/HOLT LOGO W 1.png" alt="" /></a>
+        </div>
+        <div class="header-menu">
+          <a class="header-menu-links" href="./second-page.html">Продукт</a>
+          <a class="header-menu-links" href="#sales"
+            >Эксклюзивные предложения</a
+          >
+          <a class="header-menu-links" href="#contacts">Поддержка</a>
+          <a class="header-menu-links" href="#contacts">О нас</a>
+        </div>
+        <div class="flex-grow"></div>
+        <div class="header-tools">
+          <button onclick="openDialog()" class="header-tools-button">
+            <span class="material-symbols-outlined header-icon"> person </span>
+            <span>Аккаунт</span>
+          </button>
+          <button class="header-tools-button">
+            <span class="material-symbols-outlined header-icon">
+              shopping_cart
+            </span>
+            <span>Корзина</span>
+          </button>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="annotations">
+          <a href="./second-page.html">
+            <img
+              class="product-annotation"
+              src="./img/annotation 13.jpg"
+              alt=""
+            />
+          </a>
+          <a href="third-page.html"
+            ><img
+              class="product-annotation"
+              src="./img/annotation 14.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="product-description">
+          <div class="product-description-text">
+            <h1 class="description-heading">
+              Твой новый друг
+              <p>с доставкой на дом</p>
+            </h1>
+            <p>
+              Электрогриль HOLT со съемными двухсторонними панелями позволяет
+              готовить множество вкусных и полезных блюд. Регулировка по высоте
+              дает возможность приготовить стейк и шаурму любого размера, а
+              разворот на 180 градусов – пожарить яичницу и овощи.
+            </p>
+            <p>
+              Классическая конструкция и дизайн – это удовольствие пользоваться
+              грилем каждый день и без труда создать праздник для большой
+              компании. Съемные пластины с качественным антипригарным покрытием
+              можно мыть в посудомоечной машине.
+            </p>
+          </div>
+          <div class="product-img">
+            <img class="product-img1" src="./img/description img1.png" alt="" />
+          </div>
+        </div>
+        <div class="prod-characteristics">
+          <div class="prod-characteristics-item">
+            <img class="prod-item-img" src="./img/prod-item-img.png" alt="" />
+            <ul>
+              <li>Максимальная мощность нагрева 240 градусов.</li>
+              <li>
+                Есть регулировка по высоте, что позволяет готовить блюда разной
+                толщины.
+              </li>
+              <li>Есть таймер: от 1 до 30 минут</li>
+            </ul>
+          </div>
+          <div class="prod-characteristics-item">
+            <img class="prod-item-img" src="./img/prod-item-img2.png" alt="" />
+            <ul>
+              <li>
+                Классическая конструкция и дизайн – это удовольствие
+                пользоваться грилем каждый день и без труда создать праздник для
+                большой компании.
+              </li>
+              <li>
+                Съемные пластины с качественным антипригарным покрытием можно
+                мыть в посудомоечной машине.
+              </li>
+            </ul>
+          </div>
+          <div class="prod-characteristics-item">
+            <img class="prod-item-img" src="./img/prod-item-img3.png" alt="" />
+            <ul>
+              <li>
+                Можно использовать как в закрытом виде, так и в открытом, т.к.
+                есть механизм позволяющий разложить гриль на 180°
+              </li>
+              <li>
+                Панели двусторонние: одна сторона плоская, другая рифлёная,
+                поэтому гриль можно использовать не только по классическому
+                предназначению, но и как сковородку
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-description">
+          <div class="product-description-text">
+            <h1 class="description-heading">
+              Твой новый друг
+              <p>с доставкой на дом</p>
+            </h1>
+            <p>
+              Прибор, разработанный для повседневного использования при первой
+              необходимости, станет вашим рабочим инструментом для приведения
+              вещей в надлежащий вид.Предусмотрен режим вертикального
+              отпаривания и паровой удар (расход воды 130 гр./мин.), а также
+              режим ЭКО для экономии воды и энергии.
+            </p>
+            <p>
+              Высокая мощность при сравнительно небольшом запасе воды (220 мл.)
+              дают неожиданный выигрыш. Дело в том, что весь запас жидкости
+              расходуется строго по назначению, а значит, много воды просто не
+              потребуется! За счет высокой мощности, утюг приводится в рабочее
+              положение всего за 35 сек. с момента включения.
+            </p>
+          </div>
+          <div class="product-img">
+            <img src="./img/prod-img.png" alt="" />
+          </div>
+        </div>
+        <div class="sales" id="sales">
+          <h1 class="description-heading">Топ акций</h1>
+          <div class="sales-item-list">
+            <div class="sale-item">
+              <a href="third-page.html"
+                ><img src="./img/sale-item1.png" alt=""
+              /></a>
+              <p>
+                Чайник, бесшовный внутри и идеально красный снаружи! Двойные
+                стенки из термостойкого пластика и нержавеющей стали сделают
+                использование более приятным и помогут сохранить температуру
+                воды на длительный срок. Объем чайника 1,7 литра позволит
+                приготовить чай на всю семью сразу.Защита от перегрева и
+                включения без воды отбросят все Ваши переживания.
+              </p>
+            </div>
+            <div class="sale-item">
+              <a href="./second-page.html"
+                ><img src="./img/sale-item2.png" alt=""
+              /></a>
+              <p>
+                Универсальный набор для стрижки HOLT HT-TR-001 поможет вам не
+                только сделать любую модную прическу, но и побриться или
+                подстричь бороду и усы, а так же гигиенически удалить лишние
+                волосы на всем теле. Подставка позволит вам удобно хранить все
+                предметы набора в одном месте.​
+              </p>
+            </div>
+            <div class="sale-item">
+              <a href="third-page.html"
+                ><img src="./img/sale-item1.png" alt=""
+              /></a>
+              <p>
+                Чайник, бесшовный внутри и идеально красный снаружи! Двойные
+                стенки из термостойкого пластика и нержавеющей стали сделают
+                использование более приятным и помогут сохранить температуру
+                воды на длительный срок. Объем чайника 1,7 литра позволит
+                приготовить чай на всю семью сразу.Защита от перегрева и
+                включения без воды отбросят все Ваши переживания.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts" id="contacts">
+          <div class="contact-menu">
+            <div class="contact-icons">
+              <span class="material-symbols-outlined contact-icon">
+                support_agent
+              </span>
+            </div>
+            <ul>
+              <li>Руководитель отдела продаж: Вадим Готовчиц</li>
+              <p>123456789@mail.ru</p>
+              <li>Ведущий специалист отдела продаж: Наталья Данилова</li>
+              <p>123456789@mail.ru</p>
+              <li>Заместитель руководителя отдела продаж: Павел Яроцкий</li>
+              <p>123456789@mail.ru</p>
+            </ul>
+          </div>
+          <div class="contact-menu">
+            <div class="contact-icons">
+              <span class="material-symbols-outlined contact-icon">
+                location_on
+              </span>
+            </div>
+            <p>Республика Беларусь, 220035, г. Минск</p>
+            <p>ул. Тимирязева, д. 65а, офис 307</p>
+            <p>Email: adimaxtrade@mail.ru</p>
+            <p>Оф.сайт: holt.by</p>
+          </div>
+        </div>
+        <div class="rights">
+          <span>© HOLT, 2015 </span>
+          <p>Все права защищены</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openDialog() {
+        const dialog = document.querySelector(".dialog-container");
+        dialog.classList.add("shown");
+        const offScroll = document.body;
+        offScroll.classList.add("off-scroll");
+      }
+      function closeDialog() {
+        const dialog = document.querySelector(".dialog-container");
+        dialog.classList.remove("shown");
+        const offScroll = document.body;
+        offScroll.classList.remove("off-scroll");
+      }
+    </script>
+  </body>
+</html>
